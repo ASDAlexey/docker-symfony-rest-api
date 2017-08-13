@@ -11,4 +11,5 @@ parameters:
     mailer_host:       127.0.0.1
     mailer_user:       ~
     mailer_password:   ~
+    jwt_key_pass_phrase: happyapi
 EOF
