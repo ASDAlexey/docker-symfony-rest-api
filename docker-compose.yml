@@ -18,7 +18,7 @@ services:
      - db
     volumes:
      - ./src/symfony:/var/www/html/${APP_NAME}
-     - ./app/config/parameters.yml:/var/www/html/${APP_NAME}/app/config/parameters.yml
+     - ./configs/parameters.yml:/var/www/html/${APP_NAME}/app/config/parameters.yml
 #     - ./app/config/conf.d/docker-php-ext-xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
   web-srv:
     build: ./docker-images/nginx
@@ -28,5 +28,6 @@ services:
      - ./nginx/configs/conf.d/:/etc/nginx/conf.d/
      - ./nginx/configs/nginx.conf:/etc/nginx/nginx.conf
      - ./nginx/configs/.htpasswd:/etc/nginx/.htpasswd
+     - ./nginx/ssl/:/etc/nginx/ssl/
     volumes_from:
      - app
