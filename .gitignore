@@ -8,3 +8,4 @@ nginx/ssl/*.key
 configs/*.yml
 .htpasswd
 /openssl.cnf
+/symfony-rest-api.com.csr
