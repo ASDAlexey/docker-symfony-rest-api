@@ -1,0 +1,10 @@
+.idea/
+.env
+src/
+.DS_Store
+nginx/configs/conf.d/*.conf
+nginx/ssl/*.cert
+nginx/ssl/*.key
+configs/*.yml
+.htpasswd
+/openssl.cnf
